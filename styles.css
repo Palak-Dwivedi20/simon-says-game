@@ -1,7 +1,8 @@
 body {
     text-align: center;
-    font-family: 'Poppins', sans-serif; /* or any Google Font */
+    font-family: 'Poppins', sans-serif;
     background-color: #fefefe;
+    line-height: 1.5;
 }
 
 h3 {
@@ -95,47 +96,45 @@ h2 {
   color: #ccc;
 }
 
-
 @media (max-width: 600px) {
     body {
         padding: 1rem;
     }
 
-    .btn {
-        height: 100px;
-        width: 100px;
-        margin: 1rem;
-    }
-
     .btn-container {
         flex-wrap: wrap;
-        gap: 1rem;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn {
+        height: 120px;
+        width: 120px;
+        margin: 0.5rem;
+        border: 6px solid black;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     #start-text {
+        font-size: 18px;
         margin-top: 0.5rem;
-        font-size: 22px;
-        text-align: center;
-        color: #444;
-        font-weight: 500;
     }
 
     #start-btn {
-    font-size: 16px;
-    padding: 10px 20px;
-    width: 90%;
-    max-width: 300px;
-
-}
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 90%;
+        max-width: 300px;
+    }
 
     h3 {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
+
 
 #footer {
   display: flex;
@@ -186,5 +185,12 @@ h2 {
   }
 }
 
+h1, h2 {
+    text-align: center;
+}
 
+.btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
 
