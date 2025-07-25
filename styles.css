@@ -1,0 +1,190 @@
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* or any Google Font */
+    background-color: #fefefe;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color: darkgreen;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    margin-top: 0.5rem;
+    font-size: 22px;
+}
+
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.yellow {
+    background-color: #f99b45;
+}
+
+.red {
+    background-color: #d95980;
+}
+
+.green {
+    background-color: #63aac0;
+}
+
+.purple {
+    background-color: #819ff9;
+}
+
+.flash {
+    background-color: white;
+}
+
+.userFlash {
+    background-color: green;
+}
+
+#start-btn {
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#start-btn:hover {
+  background: linear-gradient(135deg, #66BB6A, #1B5E20);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+#start-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+#start-btn:disabled:hover {
+  background-color: gray;
+  cursor: not-allowed;
+  color: #ccc;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    .btn {
+        height: 100px;
+        width: 100px;
+        margin: 1rem;
+    }
+
+    .btn-container {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #start-text {
+        margin-top: 0.5rem;
+        font-size: 22px;
+        text-align: center;
+        color: #444;
+        font-weight: 500;
+    }
+
+    #start-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 90%;
+    max-width: 300px;
+
+}
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  gap: 0.6rem;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.9;
+  color: #111;
+  padding: 1.2rem 0;
+  text-align: center;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #111;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#footer a:hover {
+  transform: scale(1.05);
+  color: #555;
+}
+
+@media (max-width: 600px) {
+    #footer {
+        flex-direction: column;
+        font-size: 14px;
+        gap: 0.2rem;
+    }
+}
+
+
+.blink {
+  animation: blinkAnim 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes blinkAnim {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+}
+
+
+
